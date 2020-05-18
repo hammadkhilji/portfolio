@@ -4,6 +4,10 @@ body, h1, h2, p, span, div, nav, button, ul, li {
   margin: 0;
 }
 
+a {
+  color: palevioletred;
+}
+
 .curtain {
   height: 100vh;
   width: 100%;
@@ -228,10 +232,10 @@ div#curtain-logo {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 100%;
 }
 
 #main ul li {
-  background: #EFECEA;
   margin: 0 0 10% 0;
   position: relative;
 }
@@ -260,8 +264,11 @@ div#curtain-logo {
           align-items: center;
 }
 
+#main ul li a {
+  width: 100%;
+}
+
 #main ul li div {
-  background: #EFECEA;
   -webkit-filter: grayscale(80%);
           filter: grayscale(80%);
   clip-path: inset(0%);
@@ -271,6 +278,11 @@ div#curtain-logo {
   transition: clip-path 0.4s;
   transition: clip-path 0.4s, -webkit-clip-path 0.4s;
   -webkit-transition: clip-path 0.4s;
+  width: 100%;
+}
+
+#main ul li div img {
+  width: 100%;
 }
 
 #main ul li:hover div {
@@ -303,6 +315,7 @@ div#curtain-logo {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 100vw;
   /*
         #proj-img:hover{
             clip-path:inset(0 7.5% 0 7.5%);
@@ -380,6 +393,8 @@ div#curtain-logo {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 100%;
           flex: 1 0 100%;
+  -webkit-filter: grayscale(80%);
+          filter: grayscale(80%);
   -webkit-clip-path: inset(0);
           clip-path: inset(0);
   -webkit-transition: -webkit-clip-path 0.4s;
@@ -448,6 +463,14 @@ div#curtain-logo {
   line-height: 28px;
   font-weight: 300;
   color: #3A3C49;
+}
+
+#project-wrapper #proj-inner-wrapper #proj-info #proj-synopsis p {
+  margin-bottom: 4%;
+}
+
+#project-wrapper #proj-inner-wrapper #proj-info #proj-synopsis p:last-child {
+  padding-bottom: 10px;
 }
 
 #project-wrapper #proj-inner-wrapper #proj-info #proj-summary {
@@ -576,7 +599,7 @@ div#curtain-logo {
           filter: grayscale(80%);
 }
 
-#project-wrapper #proj-inner-wrapper ul#proj-mockups li ul#proj-double {
+#project-wrapper #proj-inner-wrapper ul#proj-mockups li ul.proj-double {
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -586,14 +609,26 @@ div#curtain-logo {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
 }
 
-#project-wrapper #proj-inner-wrapper ul#proj-mockups li ul#proj-double li {
+#project-wrapper #proj-inner-wrapper ul#proj-mockups li ul.proj-double li {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 46%;
           flex: 0 0 46%;
   margin: 0;
   padding: 0;
+}
+
+#project-wrapper #proj-inner-wrapper ul#proj-mockups li ul.proj-double li img {
+  width: 100%;
+}
+
+#project-wrapper #proj-inner-wrapper ul#proj-mockups li img {
+  width: 100%;
 }
 
 #project-wrapper #proj-inner-wrapper ul#proj-mockups li:last-child {
@@ -901,12 +936,18 @@ div#contact button:hover a:before {
   }
   #main ul li {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 30%;
-            flex: 0 0 30%;
+        -ms-flex: 0 1 30%;
+            flex: 0 1 30%;
     margin: 0 0 10% 0;
   }
   #main ul li:nth-child(odd) {
     margin-right: 10%;
+  }
+  #main ul li:last-child {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 30%;
+            flex: 0 1 30%;
+    margin: 0 0 10% 0;
   }
   div#contact {
     min-height: 60vh;
@@ -1137,12 +1178,18 @@ div#contact button:hover a:before {
   }
   #main ul li {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 30%;
-            flex: 0 0 30%;
+        -ms-flex: 0 1 30%;
+            flex: 0 1 30%;
     margin: 0 0 10% 0;
   }
   #main ul li:nth-child(odd) {
     margin-right: 10%;
+  }
+  #main ul li:last-child {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 30.1%;
+            flex: 0 1 30.1%;
+    margin: 0 0 10% 0;
   }
   div#contact {
     min-height: 60vh;
@@ -1377,12 +1424,18 @@ div#contact button:hover a:before {
   }
   #main ul li {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 35%;
-            flex: 0 0 35%;
+        -ms-flex: 0 1 35%;
+            flex: 0 1 35%;
     margin: 0 0 10% 0;
   }
   #main ul li:nth-child(odd) {
     margin-right: 10%;
+  }
+  #main ul li:last-child {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 35.1%;
+            flex: 0 1 35.1%;
+    margin: 0 0 10% 0;
   }
   div#contact {
     min-height: 500px;
@@ -1615,12 +1668,18 @@ div#contact button:hover a:before {
   }
   #main ul li {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 35%;
-            flex: 0 0 35%;
+        -ms-flex: 0 1 35%;
+            flex: 0 1 35%;
     margin: 0 0 10% 0;
   }
   #main ul li:nth-child(odd) {
     margin-right: 10%;
+  }
+  #main ul li:last-child {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 35.1%;
+            flex: 0 1 35.1%;
+    margin: 0 0 10% 0;
   }
   div#contact {
     min-height: 500px;
@@ -1839,12 +1898,18 @@ div#contact button:hover a:before {
   }
   #main ul li {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 40%;
-            flex: 0 0 40%;
+        -ms-flex: 0 1 40%;
+            flex: 0 1 40%;
     margin: 0 0 10% 0;
   }
   #main ul li:nth-child(odd) {
     margin-right: 10%;
+  }
+  #main ul li:last-child {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 40.1%;
+            flex: 0 1 40.1%;
+    margin: 0 0 10% 0;
   }
   div#contact {
     min-height: 500px;
@@ -2079,12 +2144,18 @@ div#contact button:hover a:before {
   }
   #main ul li {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 40%;
-            flex: 0 0 40%;
+        -ms-flex: 0 1 40%;
+            flex: 0 1 40%;
     margin: 0 0 10% 0;
   }
   #main ul li:nth-child(odd) {
     margin-right: 10%;
+  }
+  #main ul li:last-child {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 40.1%;
+            flex: 0 1 40.1%;
+    margin: 0 0 10% 0;
   }
   div#contact {
     min-height: 500px;
